@@ -8,6 +8,6 @@ if ($_SERVER['SERVER_NAME'] == 'davidtrussler.net') {
 	$DOC_ROOT = '/Library/WebServer/Documents/dtNet/';
 }
 
-$COMMENT_EXPIRE = 243; // number of days until comments are disabled
+$COMMENT_EXPIRE = 0; // number of days until comments are disabled
 
 ?>
