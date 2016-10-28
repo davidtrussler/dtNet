@@ -1,0 +1,37 @@
+<p>The world of web development is currently getting very excited about something called the Progressive Web App (PWA). I recently attended the <a href="http://2016.render-conf.com/" class="newWindow">Render Front End Conference</a> where it was the subject that dominated throughout. Bruce Lawson, Deputy Chief Technology Officer at Opera, set the scene in the conference&#8217;s <a href="https://vimeo.com/album/3953264/video/165995132" class="newWindow">opening talk</a>.</p>
+
+<p>Bruce&#8217;s starting point was the old adage that in every industry the customer is always right. And over the last few years users of the mobile web have been voting with their fingers and moving away from mobile sites towards native apps. The statistics he showed us demonstrated this trend. In 2013 users in the USA were dividing their time browsing roughly 80% to 20% in favour of native apps over the mobile web. A year later the gap had widened to 86% against 14%. That&#8217;s quite a large difference and one that is still expanding. The fear is that, as mobile use increases, the web as we know it is in terminal decline.</p>
+
+<p>So what lies behind this trend? Well, it turns out that what customers in our industry really want is a better user experience. An experience like they find in native apps in fact.</p>
+
+<p>In response, the three main cross-OS browsers (Chrome, Firefox and Opera) have been working together to bring the feel of native apps to the user on the web. The goal is to bring to the web browser a number of features that give the user that native app feel, achieved through a number of new and existing technologies.</p>
+
+<p>The result is the concept of the PWA, which can be defined as having the following characteristics.</p>
+
+<p>They are based on the principles of progressive enhancement and responsive design. This means they work for all users on all devices.</p>
+
+<p>An app built on this model feels like a native app because it is built on the model of the app shell&#8212;more on which later.</p>
+
+<p>Because they live on the web not the device, there is no need for the user to visit an app store to get updates. In this model the developer deploys updates to the server and the user gains the benefit of this immediately on their next visit. And because they are web-based PWAs are searchable, linkable and indexable.</p>
+
+<p>With a PWA loaded in their browser the user can install an icon&#8212;created under control of the developers and designers of the site&#8212;to their home screen from which it can be launched next time.</p>
+
+<p>But the major change&#8212;in Bruce Lawson&#8217;s words the &#8220;big game changer&#8221;&#8212;is that PWAs function offline. It is a technology that fits firmly into&#8212;and extends&#8212;the concept of progressive enhancemenent. In a world where we build our sites mobile-first we should now also be thinking offline-first. If you have ever been on a train trying to access a site through a weak or absent network signal (what Jake Archibald has called &#8220;Lie-Fi&#8221;) the PWA concept brings the user a baseline experience which is then enhanced by content from the network when it becomes available.</p>
+
+<p>This ability to function offline lies behind the concept of the app shell: elements such as the user interface can be loaded into the browser from the device&#8217;s cache before further data is added from the network. This in turn leads to much improved performance, notably much faster load times especially when the user is is experiencing the Lie-Fi effect.</p>
+
+<p>Additionally, the user can be kept engaged with the app when they are no longer actively viewing it through features such as push notifications.</p>
+
+<p>That&#8217;s what a PWA looks and feels like. So how does it work?</p>
+
+<p>There are two main technologies behind it: the Manifest and the Service Worker.</p>
+
+<p>The manifest is a JSON file containing metadata that provides the device with information such as the app&#8217;s name, a set of launch icons and a preferred URL to use when the app is launched. Via this file the developer is also able to declare other properties such as the default orientation and the display mode&#8212;whether the app appears with or without the browser chrome and URL bar for instance. The full spec of the manifest is available <a href="https://www.w3.org/TR/appmanifest/" class="newWindow">here</a>.</p>
+
+<p>The Service Worker powers offline working. This can be thought of as a proxy that sits between the browser and the network. It has the ability to intercept requests and responses and manipulate these in various useful ways. Most commonly it is the means by which the device can cache content received from the network and serve it up as requested in future without the need for a further network request. The draft Service Worker Specification can be found <a href="https://w3c.github.io/ServiceWorker/" class="newWindow">here</a>.</p>
+
+<p>As the technology evolves the Service Worker will expand the capabilities of the web browser beyond this. Alongside push notifications they are currently able to update data in the background, while the user is away from the app and handle device data such as geolocation.</p>
+
+<p>The PWA is an extremely exciting development in the web, and a logical extension of the concept of progressive enhancemenent. It is still early days for the technology and there is much up for grabs. A best set of working practices are yet to be established but much like the concept of Responsive Design, which first emerged around 2010, we can expect it to evolve into the established way of building for the web in the very near future.</p>
+
+<p class="note">This is a version of a <a href="http://making.moneyadviceservice.org.uk/2016/10/an-introduction-to-progressive-web-apps/" class="newWindow">post</a> that originally appeared on the Developers&#8217; Blog at the Money Advice Service.</p>
