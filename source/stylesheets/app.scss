@@ -1,0 +1,6 @@
+@import 'reset'; 
+@import 'grid'; 
+
+header, main, footer {
+	@include column(12); 
+}
