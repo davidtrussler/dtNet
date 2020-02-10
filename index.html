@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>David Trussler</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="stylesheets/app.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 	</head>
 
 	<body>
-		<div>
-			<div>
-				<h1>David Trussler</h1>
-
-				<img src="graphics/davePoster.jpg" alt="David Trussler"/>
-
-				<p>I am a Web Developer, occasional musician, long-suffering supporter of Coventry City and sometime commentator on politics based in Coventry, West Midlands, UK.</p>
-
-				<p>I have been working in web development for several years after a lifetime spent in the print industry, both in design and in the actual process of applying ink to paper. Indeed, I have still been involved in this until quite recently, occasionally working on both litho and letterpress. I find getting my hands literally dirty provides a welcome relief from rearranging pixels on a screen! With this background, it&#8217;s no surprise that I am a bit obsessed with good, old-fashioned values of typography and find bringing this into the digital age a fascinating challenge. In fact I am sometimes amazed by the resemblance of juggling type, leading, furniture and letterpress forms with CSS floating and positioning!</p>
-
-				<p>In the realm of the internet, my main areas of expertise are XHTML, CSS, JavaScript, PHP and MySQL. I am still more than handy from my print design days with Photoshop and Illustrator which I use to put a site together before the coding begins. I&#8217;m also pretty passionate about web compliance and accessibility standards.</p>
-
-				<p>My other main passion is music: my tastes are eclectic, and I dabble from time to time in both improvised music (playing clarinet) and electronic music. My output in the latter field has been described as &#8220;just noise&#8221; (which is just fine by me!).</p>
+		<header>
+			<div class="constrained">
+				<div class="header__inner">
+					<h1 class="header__title">David Trussler</h1>
+				</div>
 			</div>
+		</header>
 
-			<div id="footer" class="clear">
-				<ul>
-					<li><a href="https://www.linkedin.com/in/dtrussler/">LinkedIn</a></li>
-					<li><a href="https://github.com/davidtrussler">GitHub</a></li>
-				</ul>
+		<main>
+			<div class="constrained">
+				<div class="main__inner">
+					<div class="img_main">
+						<img src="graphics/davePoster.jpg" alt="David Trussler"/>
+					</div>
 
-				<p class="credit">&#169; David Trussler 2020</p>
+					<p>I am a Web Developer, occasional musician, long-suffering supporter of Coventry City and sometime commentator on politics based in Coventry, West Midlands, UK.</p>
+
+					<p>I have been working in web development for several years after a lifetime spent in the print industry, both in design and in the actual process of applying ink to paper. Indeed, I have still been involved in this until quite recently, occasionally working on both litho and letterpress. I find getting my hands literally dirty provides a welcome relief from rearranging pixels on a screen! With this background, it&#8217;s no surprise that I am a bit obsessed with good, old-fashioned values of typography and find bringing this into the digital age a fascinating challenge. In fact I am sometimes amazed by the resemblance of juggling type, leading, furniture and letterpress forms with CSS floating and positioning!</p>
+
+					<p>In the realm of the internet, my main areas of expertise are XHTML, CSS, JavaScript, PHP and MySQL. I am still more than handy from my print design days with Photoshop and Illustrator which I use to put a site together before the coding begins. I&#8217;m also pretty passionate about web compliance and accessibility standards.</p>
+
+					<p>My other main passion is music: my tastes are eclectic, and I dabble from time to time in both improvised music (playing clarinet) and electronic music. My output in the latter field has been described as &#8220;just noise&#8221; (which is just fine by me!).</p>
+				</div>
 			</div>
-		</div>
+		</main>
+
+		<footer>
+			<div class="constrained">
+				<div class="footer__inner">
+					<nav>
+						<ul class="footer__links">
+							<li class="footer__linkitem"><a href="https://www.linkedin.com/in/dtrussler/">LinkedIn</a></li>
+							<li class="footer__linkitem"><a href="https://github.com/davidtrussler">GitHub</a></li>
+						</ul>
+					</nav>
+
+					<p>&#169; David Trussler 2020</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
