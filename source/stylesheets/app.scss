@@ -1,5 +1,66 @@
-@import 'reset'; 
+@import 'reset';
+@import 'variables'; 
 @import 'grid'; 
 @import 'mediaqueries'; 
 @import 'base'; 
 
+header, main, footer {
+	@include clearfix; 
+}
+
+header, main {
+	margin: 0 0 0.5rem; 
+}
+
+header, footer {
+	background: $primary_background;
+}
+
+.main__inner, .footer__inner, .header__inner {
+	@include column(12); 
+}
+
+.img_main {
+	width: 100%; 
+
+	@include respond-to($mq-s) {
+		width: 1 / 2 * 100%;
+		float: right; 
+		margin: 0 0 0 $default-gutter*2;
+	}
+
+	@include respond-to($mq-m) {
+		width: 1 / 3 * 100%;
+	}
+
+	img {
+		width: 100%; 
+	}
+}
+
+.header__title {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1.5rem; 
+	margin: 0.5rem 0; 
+}
+
+.footer__links {
+	@include clearfix; 
+
+	margin: 0.5rem 0 0;
+}
+
+.footer__linkitem {
+	@include respond-to($mq-s) {
+		float: left; 
+		border-left: solid 1px; 
+		margin-left: $default-gutter; 
+		padding-left: $default-gutter; 
+
+		&:first-child {
+			border-left: none; 
+			margin-left: 0; 
+			padding-left: 0; 
+		}
+	}
+}
